@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เซอร์ไพรส์แฟนเก่า</title>
+    <style>
+        /* Global styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #ff4e50, #ff6b81, #9b4d97); /* ไล่เชดสีแดง ชมพู ม่วง */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            overflow: hidden;
+            flex-direction: column;
+        }
+
+        /* Main title */
+        h1 {
+            font-size: 4rem;
+            color: #fff;
+            text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+            animation: fadeIn 2s ease-out;
+            margin-bottom: 20px;
+            letter-spacing: 2px;
+        }
+
+        /* Subtitle */
+        p {
+            font-size: 1.4rem;
+            color: #fff;
+            margin-bottom: 30px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+        }
+
+        /* Button styles */
+        .reveal-btn {
+            padding: 20px 45px;
+            background: linear-gradient(135deg, #ff6db6, #ff3c89); /* ไล่เชดสีชมพูม่วงแดง */
+            color: #fff;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            font-size: 1.4rem;
+            font-weight: bold;
+            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+            animation: bounceIn 1s ease-in-out;
+            width: 80%;
+            max-width: 400px;
+            margin: 10px auto;
+        }
+
+        .reveal-btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.3);
+            background: linear-gradient(135deg, #ff5a97, #ff2d73); /* เพิ่มเฉดสีเข้มขึ้น */
+        }
+
+        /* Letter style */
+        .letter {
+            display: none;
+            background-color: #fff;
+            color: #333;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+            max-width: 600px;
+            margin: 20px auto;
+            opacity: 0;
+            transform: translateY(50px);
+            animation: slideIn 1s forwards ease-out;
+            font-size: 1.2rem;
+            line-height: 1.8;
+        }
+
+        .letter h2 {
+            font-size: 2.5rem;
+            color: #9b4d97; /* สีม่วงเข้ม */
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .letter p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            text-align: left;
+            color: #333;
+        }
+
+        /* Keyframe animations */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes bounceIn {
+            0% {
+                transform: scale(0);
+            }
+            50% {
+                transform: scale(1.2);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        @keyframes slideIn {
+            0% {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Main Content -->
+    <div>
+        <h1>เธอกลับมาได้ไหม? 💖✨</h1>
+        <p>อยากให้เธอได้อ่านคำจากใจเค้าบ้าง... 💌💭</p>
+        <button class="reveal-btn" onclick="showLetter()">คลิกเพื่อเปิดจดหมาย 💕</button>
+    </div>
+    <br>
+
+    <!-- The Letter -->
+    <div class="letter" id="letter">
+        <h2>จดหมายจากใจถึงเธอ 💌</h2>
+        <p>ถึงแฟนเก่าคนโปรด... 😘</p>
+        <p>คิดถึงเธอมากๆ เลยนะ เค้าคิดถึงเธอทุกวันเลยรู้ไหม? ทุกๆ วันเหมือนมีอะไรขาดไปจากชีวิต เค้าคิดถึงเธอมากจนไม่รู้จะบอกยังไง...</p>
+        <p>ทุกครั้งที่เค้าเงียบๆ หรือไม่ได้พูดอะไร เค้าคิดถึงเธอมากจริงๆ อยากให้เธอกลับมาได้ไหม? หรือถ้าเธอยังไม่พร้อมให้เราเริ่มใหม่กันได้ไหม? 🥺</p>
+        <p>ความทรงจำที่เรามีร่วมกันมันยังอยู่ในใจเค้าตลอดเลยนะ เค้าไม่อยากให้ทุกอย่างมันจบไปแค่นี้ 💭</p>
+        <p>เค้ายังอยากให้เราเดินไปด้วยกันอีกครั้ง อยากให้เธอกลับมาอยู่ในชีวิตเค้าเหมือนเดิม ไม่รู้ว่าเธอจะรู้สึกเหมือนกันหรือเปล่า... แต่เค้าพร้อมจะรอและขอโอกาสอีกครั้งจริงๆ 💖</p>
+        <p>เค้ารู้ว่าเราอาจจะต้องใช้เวลาสักหน่อย แต่ถ้าเธอให้โอกาสเค้าอีกครั้ง เค้าจะไม่ทำให้เธอผิดหวังแน่นอน 💪💕</p>
+        <p>รักเธอมากๆ และคิดถึงเธอเสมอ กลับมาได้ไหม... 😘🌸</p>
+        <p>- เค้าที่รอเธอกลับมานะ 😔💖</p>
+    </div>
+
+    <!-- JavaScript to show letter -->
+    <script>
+        function showLetter() {
+            document.getElementById("letter").style.display = "block";
+        }
+    </script>
+
+</body>
+</html>
